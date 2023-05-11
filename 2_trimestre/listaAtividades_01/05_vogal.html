@@ -2,10 +2,18 @@
     //Problema: Vogal
     //Peça para o usuário informar uma letra e diga, ao final do programa, se ele digitou uma vogal ou não.
     //ENTRADA
-
+    const letra = prompt('Informe uma letra:')
 
     //PROCESSAMENTO
-
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+        alert('A letra é uma vogal!')
+    }
+    else if (letra.length >= 2) {
+        alert('Informe apenas uma letra!')
+    }
+    else {
+        alert('A letra é uma consoante!')
+    }
 
     //SAÍDA
 
