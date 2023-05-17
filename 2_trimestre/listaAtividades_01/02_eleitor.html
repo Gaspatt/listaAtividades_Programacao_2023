@@ -4,13 +4,19 @@
 
     //ENTRADA
     const idade = Number(prompt('Informe sua idade:'))
+    const titulo = prompt('Você já possui um titulo de eleitor?(Responda com S ou N)').toUpperCase().trim();
 
     //PROCESSAMENTO
-    if (idade >= 16) {
-        alert(`Você já pode votar!`)
+    if (titulo == "S" || titulo == "N") {
+        if (idade >= 16 && titulo == "S") {
+            alert(`Você já pode votar!`)
+        }
+        else {
+            alert('Você não pode votar ainda!')
+        }
     }
     else {
-        alert('Você não pode votar ainda!')
+        alert('Responda com S ou N!')
     }
 
     //SAÍDA

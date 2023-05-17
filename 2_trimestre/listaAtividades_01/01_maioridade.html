@@ -4,11 +4,12 @@
 
     //ENTRADA
     const ano = Number(prompt('Informe o ano que você nasceu:'))
-    idade = 2023 - ano
     //PROCESSAMENTO
-    if (idade >= 18) {
+    //const data = new Date()
+    //const anoatual = data.getFullYear()
+    if (new Date().getFullYear() - ano >= 18) {
         alert(`Você já atingiu a maioridade!
-        Sua idade: ${idade}`)
+        Sua idade: ${new Date().getFullYear() - ano}`)
     }
     else {
         alert('Você não é maior de idade ainda!')
